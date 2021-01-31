@@ -20,7 +20,7 @@ title                    : "JinY's Research Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jinyong Lee(JinYs)"
-description              : "An amazing website."
+description              : "Developer analyzing experience"
 url                      : "https://yn-e-si.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Jinyong Lee(JinYs)"
   avatar           : "/assets/images/cat.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Developer analyzing experience"
+  bio              : "Step by step goes a long way"
   location         : "South Korea"
   email            :
   links:
