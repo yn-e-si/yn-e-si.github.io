@@ -102,9 +102,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:leejy951@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://yn-e-si.github.io"
+    
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jinyong-lee-a1b0b2202/"
