@@ -101,30 +101,30 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:leejy951@gmail.com"
+      url: "mailto:leejy951@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://yn-e-si.github.io"
+      url: "https://yn-e-si.github.io"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://www.linkedin.com/in/jinyong-lee-a1b0b2202/"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jinyong-lee-a1b0b2202/"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/yn-e-si"
+      url: "https://github.com/yn-e-si"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/yn.e_si/"
+      url: "https://instagram.com/yn.e_si/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/yn-e-si"
+      url: "https://github.com/yn-e-si"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-gitlab"
-      # url: "https://linkedin.com/in/jinyong-lee-a1b0b2202/
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/jinyong-lee-a1b0b2202/"
 
 
 # Reading Files
