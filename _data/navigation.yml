@@ -4,9 +4,13 @@ main:
     url: /ML/
   - title: "DL"
     url: /DL/
+  - title: "DB"
+    url: /DB/
   - title: "CS"
     url: /CS/
   - title: "Daily"
     url: /daily/
+  - title: "All Posts"
+    url: /categories/
   # - title: "Sitemap"
   #   url: /sitemap/
