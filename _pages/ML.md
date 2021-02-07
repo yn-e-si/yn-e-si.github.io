@@ -1,5 +1,5 @@
 ---
 title: "ML"
-permalink: /ML/
+permalink: /ml/
 layout: single
 ---

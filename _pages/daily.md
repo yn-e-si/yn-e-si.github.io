@@ -1,5 +1,5 @@
 ---
-title: "daily"
+title: "Daily"
 permalink: /daily/
 layout: single
 ---

@@ -1,5 +1,5 @@
 ---
 title: "DB"
-permalink: /DB/
+permalink: /db/
 layout: single
 ---

@@ -1,6 +1,6 @@
 ---
 title: "CS"
-permalink: /CS/
+permalink: /cs/
 layout: single
 ---
 

@@ -1,5 +1,5 @@
 ---
 title: "DL"
-permalink: /DL/
+permalink: /dl/
 layout: single
 ---
