@@ -1,7 +1,6 @@
 ---
 title: "DL"
-permalink: /categories/dl/
-layout: category
+permalink: /dl/
+layout: category-DL
 author_profile: true
-taxonomy: DL
 ---

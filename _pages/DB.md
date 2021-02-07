@@ -1,7 +1,6 @@
 ---
 title: "DB"
-permalink: /categories/db/
-layout: category
+permalink: /db/
+layout: category-DB
 author_profile: true
-taxonomy: DB
 ---
