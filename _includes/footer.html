@@ -15,5 +15,5 @@
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
-<img style="width: inherit;" src = "http://hits.dwyl.com/yn-e-si.github.io{{ page.url }}.svg" alt="hit count image"/>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyn-e-si.com&count_bg=%23EFF972&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Today+%2F+Total&edge_flat=false"/></a>
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.  <a href="https://yn-e-si.github.io/" rel="nofollow">https://yn-e-si.com.</a> All rights reserved.</div>
