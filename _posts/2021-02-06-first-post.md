@@ -3,7 +3,7 @@ title: "github 블로그첫 포스팅"
 excerpt: "github blog 첫 스타투~"
 
 categories:
- - /ML/
+ - ML
 
 last_modified_at: 2021-02-22
 ---
