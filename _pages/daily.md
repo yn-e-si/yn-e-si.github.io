@@ -1,8 +1,7 @@
 ---
 title: "Daily"
-permalink: /categories/daily/
-layout: category
+permalink: /daily/
+layout: category-Daily
 author_profile: true
-taxonomy: Daily
 ---
 
