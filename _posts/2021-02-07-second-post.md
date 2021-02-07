@@ -2,7 +2,7 @@
 title: "연습~~"
 excerpt: "다음엔 실전이다!"
 categories:
- - daily
+ - Daily
 tags:
  - new work
  - ml
