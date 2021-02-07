@@ -1,5 +1,7 @@
 ---
 title: "ML"
-permalink: /ml/
-layout: single
+permalink: /categories/ml/
+layout: category
+author_profile: true
+taxonomy: ML
 ---

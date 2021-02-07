@@ -1,6 +1,8 @@
 ---
 title: "CS"
-permalink: /cs/
-layout: single
+permalink: /categories/cs/
+layout: category
+author_profile: true
+taxonomy: CS
 ---
 
