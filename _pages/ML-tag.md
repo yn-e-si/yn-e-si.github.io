@@ -1,6 +1,6 @@
 ---
 title: "ML"
-permalink: /categories/ML/
+permalink: /categories/ml/
 layout: category
 author_profile: true
 taxonomy: ML
