@@ -3,10 +3,10 @@ title: "github 블로그첫 포스팅"
 excerpt: "github blog 첫 스타투~"
 
 categories:
- - ML
+ - ml
 tags:
  - 사이언스
-last_modified_at: 2021-02-26T08:06:00-05:00
+last_modified_at: 2021-02-22
 ---
 
 안녕하세용
