@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "ML"
-    url: /ML/
+    url: /ml/
   - title: "DL"
-    url: /DL/
+    url: /dl/
   - title: "DB"
-    url: /DB/
+    url: /db/
   - title: "CS"
-    url: /CS/
+    url: /cs/
   - title: "Daily"
     url: /daily/
   - title: "All Posts"
