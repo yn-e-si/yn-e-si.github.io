@@ -2,11 +2,11 @@
 layout: archive
 ---
 
-{{ content }
+{{ content }}
 <br>
 <section class="taxonomy__section">
   <div class="entries-{{ page.entries_layout | default: 'list' }}">
-	  {% for post in site.categories['Daily'}] %}
+	  {% for post in site.categories['Daily'] %}
 	  {% include archive-single.html type=page.entries_layout %}
 	  {% endfor %}
   </div>
