@@ -1,6 +1,6 @@
 ---
 title: "[Google Bootcamp] 1. Neural Networks and Deep Learning"
-excerpt: "Week1: Introduction"
+excerpt: "Week1: Introduction to deep learning"
 categories:
  - DL
 tags:
