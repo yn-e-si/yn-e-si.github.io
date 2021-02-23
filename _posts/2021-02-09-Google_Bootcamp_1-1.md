@@ -11,21 +11,21 @@ tags:
 
 이 포스팅은 *[Google Machine Learning Bootcamp]* 중 *[Coursera - Deep Learning Specialization Course by Andrew Ng]*의 *review*를 위해 작성된 포스팅 입니다.
 
-![](https://yn-e-si.com/assets/images/image-1.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-1.png){: .align-center}
 
 **neuron이 하는 역할**은 size(x)를 input value로 받고,  price(y)를 output으로 출력할 수 있는 **일차함수**를 만드는 것이다.
 
-![](https://yn-e-si.com/assets/images/image-2.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-2.png){: .align-center}
 
 위의 함수와 같이 최대값을 0으로 갖고 점점 증가하는 1차함수를 Relu(Rectified linear units)라 한다.
 
-![](https://yn-e-si.com/assets/images/image-3.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-3.png){: .align-center}
 
 이렇게 하나의 neuron으로 이루어져 있는 것을 **single neural network** 라고 한다.
 
 따라서 neuron들이 점차 쌓여가면 더 큰 neural network가 만들어 진다.
 
-![](https://yn-e-si.com/assets/images/image-4.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-4.png){: .align-center}
 
 4가지의 input들을 X, 예측하려는 price를 Y, 그리고 여기서 보이는 작은 동그라미들이 각각 Relu 함수라고 보면 된다.
 
@@ -37,7 +37,7 @@ neural network의 특징은 이를 학습시킬 때 input으로 x를, output으�
 
 가운데 부분은 알아서 해결되는 데, 이 때 보통 정해주는 것은 **neuron의 수**, **layer의 수** 그리고 **function의 종류** 정도라 생각하면 된다.
 
-![](https://yn-e-si.com/assets/images/image-5.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-5.png){: .align-center}
 
 이 예제에서 보자면, 현재 4개의 input을 갖고 최종적으로 price(y)를 예측해 내는 neural network라고 볼 수 있다.
 
@@ -47,14 +47,14 @@ neural network의 특징은 이를 학습시킬 때 input으로 x를, output으�
 
 즉, 여기서는 2개의 hidden layer를 가지고 있다. 그리고 각 hidden layer에 있는 동그라미 부분을 **hidden unit**이라고도 하는데 이는 위에서 언급했던 Relu와 같이 function들이 적용되는 부분이라고 생각하면 된다.
 
-![](https://yn-e-si.com/assets/images/image-6.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-6.png){: .align-center}
 
 *Supervised Learning*
 
 - target label이 존재한다.
 - **input - output** 간의 **pair**로 이루어져 있다.
 
-![](https://yn-e-si.com/assets/images/image-7.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-7.png){: .align-center}
 
 *Standard NN* - 일반적인 NN
 
@@ -62,7 +62,7 @@ neural network의 특징은 이를 학습시킬 때 input으로 x를, output으�
 
 *Recurrent NN* - **시간적인 요소**를 담고 있는 일차원적인 데이터를 다루는데 주로 사용
 
-![](https://yn-e-si.com/assets/images/image-8.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-8.png){: .align-center}
 
 *Structured Data(정형 데이터)*
 
@@ -79,7 +79,7 @@ neural network의 특징은 이를 학습시킬 때 input으로 x를, output으�
 
 → **즉, Unstructured Data는 Structured Data와 달리 규칙적으로 저장되어 있는 data가 아니며 각 값들은 명확한 뜻을 가지고 있지 않다.**
 
-![](https://yn-e-si.com/assets/images/image-9.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-9.png){: .align-center}
 
 High performance를 위한 2가지
 
@@ -90,7 +90,7 @@ High performance를 위한 2가지
 
 오직 **large training sets**일 때, **large NN**이 performance가 더 높다라고 할 수 있다.
 
-![](https://yn-e-si.com/assets/images/image-10.png){: .align-center}
+![](https://yn-e-si.com/assets/images/1-1/image-10.png){: .align-center}
 
 large data를 fast computation하려는 시도 
 
