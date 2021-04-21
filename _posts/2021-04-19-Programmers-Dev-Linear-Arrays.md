@@ -1,6 +1,8 @@
 ---
 title: "[Programmers Dev] 선형 배열 (Linear Arrays) "
 excerpt: "어서와! 자료구조와 알고리즘은 처음이지?"
+toc: true
+toc_sticky: true
 categories:
  - CS
 tags:
