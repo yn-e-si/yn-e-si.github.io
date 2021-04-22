@@ -15,7 +15,7 @@ tags:
 
 ### 재귀함수 (recursive functions) 란?
 
-: 하나의 함수에서 **자신을 다시 호출**하여 작업을 수행하는 것
+: 하나의 함수에서 **자신을 다시 호출**하여 작업을 수행하는 것을 말한다.
 
 - 생각보다 많은 종류의 문제가 재귀적으로 해결 가능
 
@@ -26,11 +26,13 @@ tags:
 
 def sum(n):
 	return n + sum(n-1)
+
 -> 끝내는 조건이 없기에 에러!
 
 def sum(n):
 	if n<=1: return n
 	else: return n + sum(n-1)
+    
 -> 재귀 호출의 종결 조건이 엄청 중요함!!
 ```
 
@@ -64,15 +66,18 @@ def sum(n):
 	return s
 -> O(n)
 
-# 추가 예제
+```
+
+```python
+# n! 를 구하는 재귀 함수
 def what(n):
     if n <= 1:
         return 1
     else:
         return n * what(n - 1)
--> n! 를 구하는 재귀 함수
--> 이처럼 재귀 함수는 직관적으로 이해하기에 좋음
 ```
+
+-> 이처럼 재귀 함수는 **직관적**으로 이해하기에 좋음
 
 
 
@@ -120,6 +125,7 @@ def combi(n, m):
 # recursive version
 def combi(n, m):
     return combi(n - 1, m) + combi(n - 1, m - 1)
+
 -> trivial case를 고려하지 않은 case
 -> 위와 같이 만들 시 error 발생!!
 
@@ -130,6 +136,7 @@ def combi(n, m):
         return 1
     else:
         return combi(n - 1, m) + combi(n - 1, m - 1)
+    
 -> 효율성 측면에서 n이 커지면 함수를 여러번 호출되는 상황이 오므로
    n이 커질수록 효율성이 떨어지는 측면이 있다!
 
@@ -152,7 +159,7 @@ def solution(L, x, l, u):
 
 
 
-### Check Point
+## Check Point
 
 - Recursive Algorithm은 **직관적**으로 이해하기에 좋다.
 - 단, 항상 **trivial case (종결 조건)** 을 신경써야 함!! 
