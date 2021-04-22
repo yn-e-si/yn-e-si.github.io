@@ -93,12 +93,12 @@ L.sort(key = lambda x: x['score'], reverse = True)
 ```python
 def linear_search(L, X):
 	i = 0
-while i < len(L) and L[i] != x:
-	i += 1
-if i< len(L):
-	return i
-else:
-	return -1
+	while i < len(L) and L[i] != x:
+		i += 1
+	if i < len(L):
+		return i
+	else:
+		return -1
 ```
 
 
