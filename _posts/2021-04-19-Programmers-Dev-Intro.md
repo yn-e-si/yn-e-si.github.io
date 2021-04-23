@@ -1,5 +1,5 @@
 ---
-title: "[Programmers Dev] Intro. 자료구조와 알고리즘"
+title: "[Programmers Dev] Intro 자료구조와 알고리즘"
 excerpt: "어서와! 자료구조와 알고리즘은 처음이지?"
 toc: true
 toc_sticky: true
@@ -36,3 +36,9 @@ tags:
 -> 해결하고자 하는 문제에 따라 (응용 종류와 범위에 따라) <u>최적의 해법은서로 다르다</u>!!
 
 -> 이 선택을 **어떻게 해야 하느냐**를 알기 위해 **자료구조**를 이해해야 한다.
+
+
+
+## Check Point
+
+- 자료구조와 알고리즘의 필요성 항상 생각하기
