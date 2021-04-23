@@ -24,11 +24,15 @@ Node
 - Data - 데이터 값을 의미 한다.
 - Link (next) - 다음 Node를 알려주는 주소가 담겨 있다.
 
--> Node 내의 데이터는 다른 구조로 이루어질 수 있다. ex) 문자열, 레코드, 다른 연결 리스트 등
+> Node 내의 데이터는 다른 구조로 이루어질 수 있다. 
+>
+> ex) 문자열, 레코드, 다른 연결 리스트 등
 
 
 
-※ 코드 구현의 편의성을 위해 다음의 3가지는 알 고 있는 것이 좋음! ※
+
+
+※ 코드 구현의 편의성을 위해 알고 있으면 좋은 3가지 ※
 
 - 제일 앞 Node = Head
 - 제일 끝 Node = Tail
@@ -36,7 +40,13 @@ Node
 
 
 
+
+
 ### 배열과 비교한 연결 리스트
+
+
+
+
 
 배열
 
@@ -46,7 +56,9 @@ Node
 연결 리스트
 
 - 저장 공간: 임의의 위치
-- 특정 원소 지칭: 선형탐새고가 유사 -> 복잡도: O(n)
+- 특정 원소 지칭: 선형탐색과 유사 -> 복잡도: O(n)
+
+
 
 
 
@@ -67,6 +79,8 @@ class LinkedList:
 
 
 
+
+
 ### 연산 정의
 
 1. 특정 원소 참조 (k 번째)
@@ -74,6 +88,8 @@ class LinkedList:
 3. 원소 삽입
 4. 원소 삭제
 5. 두 리스트의 연결
+
+
 
 
 
@@ -97,6 +113,8 @@ def getAt(self, pos):
 
 
 
+
+
 리스트 순회
 
 ```python
@@ -112,6 +130,8 @@ class LinkedList:
             
         return answer
 ```
+
+
 
 
 
@@ -131,8 +151,8 @@ def insertAt(self, pos, newNode):
 
   (1) 삽입하려는 위치가 리스트 맨 앞일 때
 
-  	- prev 가 없다.
-  	- head 의 조정이 필요하다.
+  - prev 가 없다.
+  - head 의 조정이 필요하다.
 
   (2) 삽입하려는 위치가 리스트 맨 끝일 때
 
@@ -181,6 +201,8 @@ def insertAt(self, pos, newNode):
 
 
 
+
+
 원소의 삭제
 
 - 코드 구현 주의 사항
@@ -189,6 +211,8 @@ def insertAt(self, pos, newNode):
 
   - prev 가 없다.
   - head 의 조정이 필요하다.
+
+  
 
   (2) 리스트 맨 끝의 node 를 삭제할 때
 
@@ -250,17 +274,21 @@ def concat(self, L):
 
 
 
-## 변형된 linked list
 
-: 기존의 linked list 는 삽입과 삭제가 유연하다는 점에서 큰 장점을 갖는다.
 
-  다만, 이는 앞에서 부터 node 를 찾으므로 시간이 오래걸린다는 단점이 있다.
+## 변형된 Linked List
 
-  이를 해결하기 위한 방안으로 노드 자체를 기준으로 삽입, 삭제하는 메서드가 만들어 졌다.
+- 기존의 linked list 는 삽입과 삭제가 유연하다는 점이 큰 장점
 
-  이 메서드는 기존과 다르게 맨 앞에서 접근을 편하게 하기 위해 리스트 head 에 의미를 갖지 않는
+- 앞에서 부터 node 를 찾아야하므로 시간이 오래걸린다는 단점이 존재
 
-  **dummy node** 를 추가 생성 하였다.
+> 이를 해결하기 위한 방안으로 노드 자체를 기준으로 삽입, 삭제하는 메서드가 만들어 졌다.
+>
+> 이 메서드는 기존과 다르게 맨 앞에서 접근을 편하게 하기 위해 리스트 head 에 의미를 갖지 
+>
+> 않는  **dummy node** 를 추가 생성 하였다.
+
+
 
 
 
@@ -279,6 +307,8 @@ class LinkedList:
 
 
 
+
+
 ### 연산 정의
 
 1. 특정 원소 참조 (k 번째)
@@ -286,6 +316,8 @@ class LinkedList:
 3. 원소 삽입
 4. 원소 삭제
 5. 두 리스트의 연결
+
+
 
 
 
@@ -310,6 +342,8 @@ def getAt(self, pos):
 
 
 
+
+
 리스트 순회
 
 ```python
@@ -326,9 +360,11 @@ def traverse(self):
 
 
 
+
+
 원소의 삽입
 
-insertAfter()
+- insertAfter()
 
 ```python
 def insertAfter(self, prev, newNode):
@@ -345,15 +381,17 @@ def insertAfter(self, prev, newNode):
 
 
 
-insertAt()
 
-​	(1) pos 범위 조건 확인
 
-​	(2) pos == 1 인 경우 head 뒤에 새 node 삽입
+- insertAt()
 
-​	(3) pos == nodeCount + 1 인 경우 tail -> prev
+  ​	(1) pos 범위 조건 확인
 
-​	(4) 그렇지 않은 경우 getAt(..) -> prev
+  ​	(2) pos == 1 인 경우 head 뒤에 새 node 삽입
+
+  ​	(3) pos == nodeCount + 1 인 경우 tail -> prev
+
+  ​	(4) 그렇지 않은 경우 getAt(..) -> prev
 
 ```python
 def insertAt(self, pos, newNode):
@@ -372,6 +410,8 @@ def insertAt(self, pos, newNode):
 
 
 
+
+
 원소의 삭제
 
 - 코드 구현 주의사항
@@ -383,6 +423,10 @@ def insertAt(self, pos, newNode):
   (2) 리스트 맨 끝의 node 를 삭제할 때 (curr.next == None)
 
   - tail 의 조정이 필요하다.
+
+
+
+
 
 popAfter()
 
@@ -408,6 +452,8 @@ def popAFter(self, prev):
 
 
 
+
+
 popAt()
 
 ```python
@@ -423,6 +469,8 @@ def popAt(self, pos):
 
 
 
+
+
 두 리스트의 연결
 
 ```python
@@ -434,6 +482,8 @@ def concat(self, L):
         
     self.nodeCount += L.nodeCount
 ```
+
+
 
 
 
