@@ -19,7 +19,7 @@ tags:
 
 값을 가지는 **data**와 다른 원소를 가리키는 **link**로 이루어져 있다.
 
-Node
+**Node**
 
 - Data - 데이터 값을 의미 한다.
 - Link (next) - 다음 Node를 알려주는 주소가 담겨 있다.
@@ -48,15 +48,15 @@ Node
 
 
 
-배열
+**배열**
 
 - 저장 공간: 연속한 위치
-- 특정 원소 지칭: 매우 간편 (인덱스만 지정하면 됨)  -> 복잡도: O(1)
+- 특정 원소 지칭: 매우 간편 (인덱스만 지정하면 됨)  -> 복잡도: **O(1)**
 
-연결 리스트
+**연결 리스트**
 
 - 저장 공간: 임의의 위치
-- 특정 원소 지칭: 선형탐색과 유사 -> 복잡도: O(n)
+- 특정 원소 지칭: 선형탐색과 유사 -> 복잡도: **O(n)**
 
 
 
@@ -93,7 +93,7 @@ class LinkedList:
 
 
 
-특정 원소 참조 (k 번째)
+**특정 원소 참조 (k 번째)**
 
 ```python
 def getAt(self, pos):
@@ -115,7 +115,7 @@ def getAt(self, pos):
 
 
 
-리스트 순회
+**리스트 순회**
 
 ```python
 class LinkedList:
@@ -135,7 +135,7 @@ class LinkedList:
 
 
 
-원소의 삽입
+**원소의 삽입**
 
 ```python
 # wrong code
@@ -203,7 +203,7 @@ def insertAt(self, pos, newNode):
 
 
 
-원소의 삭제
+**원소의 삭제**
 
 - 코드 구현 주의 사항
 
@@ -256,7 +256,7 @@ def popAt(self, pos):
 
 
 
-두 리스트의 연결
+**두 리스트의 연결**
 
 ```python
 def concat(self, L):
@@ -321,7 +321,7 @@ class LinkedList:
 
 
 
-특정 원소 참조 (k 번째)
+**특정 원소 참조 (k 번째)**
 
 ```python
 def getAt(self, pos):
@@ -344,7 +344,7 @@ def getAt(self, pos):
 
 
 
-리스트 순회
+**리스트 순회**
 
 ```python
 def traverse(self):
@@ -362,9 +362,9 @@ def traverse(self):
 
 
 
-원소의 삽입
+**원소의 삽입**
 
-- insertAfter()
+- **insertAfter()**
 
 ```python
 def insertAfter(self, prev, newNode):
@@ -383,7 +383,7 @@ def insertAfter(self, prev, newNode):
 
 
 
-- insertAt()
+- **insertAt()**
 
   ​	(1) pos 범위 조건 확인
 
@@ -412,7 +412,7 @@ def insertAt(self, pos, newNode):
 
 
 
-원소의 삭제
+**원소의 삭제**
 
 - 코드 구현 주의사항
 
@@ -428,7 +428,7 @@ def insertAt(self, pos, newNode):
 
 
 
-popAfter()
+**popAfter()**
 
 ```python
 def popAFter(self, prev):
@@ -454,7 +454,7 @@ def popAFter(self, prev):
 
 
 
-popAt()
+**popAt()**
 
 ```python
 def popAt(self, pos):
@@ -471,7 +471,7 @@ def popAt(self, pos):
 
 
 
-두 리스트의 연결
+**두 리스트의 연결**
 
 ```python
 def concat(self, L):
