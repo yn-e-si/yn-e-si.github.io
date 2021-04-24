@@ -14,7 +14,9 @@ tags:
 
 ## 문제풀이 lv1_나머지 한 점
 
-[문제출처] <https://school.programmers.co.kr/courses/11947/lessons/76959>
+[[문제 출처]](https://school.programmers.co.kr/courses/11947/lessons/76959)
+
+### 문제 분석
 
 - 주어진 세 점의 좌표를 통해 직사각형을 만들 수 있는 나머지 한 점의 좌표를 찾아낼 것
 
@@ -42,6 +44,16 @@ def solution(v):
 
 
 
+### 다른 사람 코드
+
+```python
+def solution(v):
+	answer = [s[2] if s[0] == s[1] else s[0] + s[1] - s[2] for s in zip(*v)]
+    return answer
+```
+
+> packing 에 대해서 새롭게 알게 되었다!  (코드가 훨씬 간결하다...)
+
 ## Check Point
 
-- count() method 의 사용
+- **packing** 과 **unpacking** 에 대해서 공부하기!
