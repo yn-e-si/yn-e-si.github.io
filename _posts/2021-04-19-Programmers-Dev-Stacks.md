@@ -21,7 +21,7 @@ tags:
 
 
 
-스택의 동작
+**스택의 동작**
 
 ```python
 S = Stack() # 초기 상태: 비어 있는 스택
@@ -63,7 +63,7 @@ r3 = S.pop()
 
 
 
-배열로 구현한 스택
+**배열로 구현한 스택**
 
 ```python
 class ArrayStack:
@@ -88,7 +88,7 @@ class ArrayStack:
 
 
 
-양방향 연결 리스트로 구현한 스택
+**양방향 연결 리스트로 구현한 스택**
 
 ```python
 class LinkedListStack:
@@ -114,7 +114,7 @@ class LinkedListStack:
 
 
 
-라이브러리 패키지로 구현한 스택
+**라이브러리 패키지로 구현한 스택**
 
 ```python
 from pythonds.basic.stack import Stack

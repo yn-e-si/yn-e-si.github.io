@@ -48,6 +48,8 @@ def sum(n):
 
 - 복잡도 측면에서는 두 개의 version 이 **똑같다**.
 
+
+
 ```python
 # Recursive version
 def sum(n):
@@ -66,10 +68,15 @@ def sum(n):
 	return s
 -> O(n)
 
+
+
 ```
 
+
+
+**연습 문제 - n! 를 구하는 재귀 함수**
+
 ```python
-# n! 를 구하는 재귀 함수
 def what(n):
     if n <= 1:
         return 1
@@ -81,9 +88,11 @@ def what(n):
 
 
 
-```python
-연습문제 - Fibonacci 순열
 
+
+**연습 문제 - Fibonacci 순열**
+
+```python
 # Recursive version
 def solution(x):
     if x == 0: return 0
@@ -110,14 +119,14 @@ def solution(x):
 
 ## 재귀 알고리즘 - 응용
 
-```python
-문제: n 개의 서로 다른 원소에서 m 개를 택하는 경우의 수
-    
-nCm = (n-1)C(m) + (n-1)C(m-1)
+**연습 문제 - n 개의 서로 다른 원소에서 m 개를 택하는 경우의 수**
+
+- nCm = (n-1)C(m) + (n-1)C(m-1)
 - 특정한 하나의 원소 입장에서 볼 때
 - 이 원소를 포함하는 경우
 - 그렇지 않은 경우를 따로 계산해서 더해야함
 
+```python
 # 내장함수 사용
 from math import fatorial as f
 
@@ -138,15 +147,17 @@ def combi(n, m):
         return 1
     else:
         return combi(n - 1, m) + combi(n - 1, m - 1)
-    
--> 효율성 측면에서 n이 커지면 함수를 여러번 호출되는 상황이 오므로
-   n이 커질수록 효율성이 떨어지는 측면이 있다!
-
 ```
 
-```python
-연습문제 - 재귀적 이진 탐색 구현
+- 효율성 측면에서 n 이 커지면 함수를 여러 번 호출되는 상황이 오므로
 
+  n 이 커질수록 효율성이 떨어지는 측면이 있다!
+
+
+
+**연습 문제 - 재귀적 이진 탐색 구현**
+
+```python
 def solution(L, x, l, u):
     
     if l > u:

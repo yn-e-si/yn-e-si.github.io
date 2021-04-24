@@ -58,7 +58,7 @@ class DoublyLinkedList:
 
 
 
-특정 원소 참조 (k 번째)
+**특정 원소 참조 (k 번째)**
 
 ```python
 # 코드 개선 전 
@@ -104,7 +104,7 @@ def getAt(self, pos):
 
 
 
-리스트 순회
+**리스트 순회**
 
 ```python
 def traverse(self):
@@ -122,7 +122,7 @@ def traverse(self):
 
 
 
-리스트 역순회
+**리스트 역순회**
 
 ```python
 def reverse(self):
@@ -140,7 +140,7 @@ def reverse(self):
 
 
 
-원소의 삽입
+**원소의 삽입**
 
 ```python
 def insertAfter(self, prev, newNode):
@@ -178,7 +178,7 @@ def insertAt(self, pos, newNode):
 
 
 
-원소의 삭제
+**원소의 삭제**
 
 ```python
 def popAfter(self, prev):
@@ -218,7 +218,7 @@ def popAt(self, pos):
 
 
 
-두 리스트의 연결
+**두 리스트의 연결**
 
 ```python
 def concat(self, L):
