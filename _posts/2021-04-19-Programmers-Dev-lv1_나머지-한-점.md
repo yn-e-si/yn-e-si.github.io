@@ -14,7 +14,7 @@ tags:
 
 ## 문제풀이 lv1_나머지 한 점
 
-[문제출처] (https://school.programmers.co.kr/courses/11947/lessons/76959)
+[문제출처] <https://school.programmers.co.kr/courses/11947/lessons/76959>
 
 - 주어진 세 점의 좌표를 통해 직사각형을 만들 수 있는 나머지 한 점의 좌표를 찾아낼 것
 
