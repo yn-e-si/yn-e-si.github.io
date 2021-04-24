@@ -16,7 +16,7 @@ tags:
 
 [[문제 출처]](https://school.programmers.co.kr/courses/11947/lessons/76962)
 
-## 문제 분석
+### 문제 분석
 
 - 가방에 사탕을 담을 수 있는 최대 무게 값과 각 사탕들에 무게가 담겨 있는 리스트가 주어진다.
 
