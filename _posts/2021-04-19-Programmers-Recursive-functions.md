@@ -88,6 +88,7 @@ def what(n):
 def solution(x):
     if x == 0: return 0
     if x == 1: return 1
+    
     return solution(x-1) + solution(x-2)
 
 # Iterative version
@@ -101,6 +102,7 @@ def solution(x):
         n1 = n2
         n2 = n
         i += 1  
+        
     return 1 if x == 1 else n
 ```
 
@@ -143,16 +145,21 @@ def combi(n, m):
 ```
 
 ```python
-연습문제 - 재귀적 이진 탐색
+연습문제 - 재귀적 이진 탐색 구현
 
 def solution(L, x, l, u):
+    
     if l > u:
         return -1
+    
     mid = (l + u) // 2
+    
     if x == L[mid]:
         return mid
+    
     elif x < L[mid]:
         return solution(L, x, l, mid - 1)
+    
     else:
         return solution(L, x, mid + 1, u)
 ```
