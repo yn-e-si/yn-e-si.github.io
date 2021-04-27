@@ -14,7 +14,7 @@ use_math: true
 
 ## &#128161; 선형시스템 (Linear System)
 
-- 가장 간단한 형태의 `linear system` (선형 시스템)
+- 가장 간단한 형태의 `linear system` 
 
 $3x = 6$ 
 
@@ -30,7 +30,7 @@ $3x + y + z = 4, x -2y - z =1, x +y + z = 2$
 
 <br/>
 
-#### 선형대수 (Linear Algebra) 의 목표
+#### &#128204; 선형대수 (Linear Algebra) 의 목표
 
 선형대수 (linear algebra) 의 목표는 어떤 연립일차방정식, 즉 <span style="background-color:#fffacd">**linear system** 문제라도 **정형적인 방법으로 표현하고 해결하는 방법**을 배우는 것</span> 이다.
 
@@ -58,11 +58,11 @@ $X = A^{-1}b$
 >
 > &#128173; linear: 평면이나 왜곡되지 않은 올바른 공간처럼 올곧은 형태를 의미한다.
 
- &#128073;  방정식이 이처럼 올곧은 공간처럼 형성된다면 **<span style="background-color:#fffacd">linear equations</span>** 이라고 말한다.
+&#128073;  방정식이 이처럼 올곧은 공간처럼 형성된다면 **<span style="background-color:#fffacd">linear equations</span>** 이라고 말한다.
 
- &#128073; 선형방정식이 가지고 있는 미지수를 각각 **<span style="background-color:#fffacd">unknown (혹은 variable)</span>** 이라 한다.
+&#128073; 선형방정식이 가지고 있는 미지수를 각각 **<span style="background-color:#fffacd">unknown (혹은 variable)</span>** 이라 한다.
 
- &#128073; 모든 방정식을 만족하는 변수들을 구하는 것을 **<span style="background-color:#fffacd">선형시스템을 푼다</span>** 라고 한다
+&#128073; 모든 방정식을 만족하는 변수들을 구하는 것을 **<span style="background-color:#fffacd">선형시스템을 푼다</span>** 라고 한다
 
 <br/>
 
