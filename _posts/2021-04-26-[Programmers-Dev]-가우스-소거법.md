@@ -21,6 +21,8 @@ use_math: true
 ### 선형시스템의 해 (Solutions of a Linear System)
 
 1) 해가 하나인 경우 (unique solution)
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -45,6 +47,8 @@ $$
 <br/>
 
 2) 해가 없는 경우 (no solution)
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -73,6 +77,8 @@ $$
 
 
 3) 해가 여러개인 경우 (infinitely many solutions)
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -100,7 +106,7 @@ $$
 
 ### Gauss elimination (가우스 소거법)
 
-Gauss elimination 은 임의의 $m$ x $n$ 선형시스템의 해를 구하는 가장 대표적인 방법이다.
+: Gauss elimination 은 임의의 $m$ x $n$ 선형시스템의 해를 구하는 가장 대표적인 방법이다.
 
 Gauss elimination 은 다음의 두 단계로 수행된다.
 
@@ -120,6 +126,8 @@ Gauss elimination 은 다음의 두 단계로 수행된다.
 <br/>
 
 주어진 선형시스템
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -144,11 +152,15 @@ x3 \\
 \right
 ]
 $$
+<br/>
+
 Forward elimination 수행 후
+
+<br/>
 $$
 \left[
 \begin{matrix}
-* & *&* \\
+\* & \*&\* \\
 0&*&* \\
 0&0&*
 \end{matrix}
@@ -209,6 +221,8 @@ x3
 \right
 ]
 $$
+<br/>
+
 Back - substitution 수행 후
 $$
 \left[
@@ -242,6 +256,8 @@ $$
 <br/>
 
 [연습문제]
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -266,6 +282,8 @@ x3
 \right
 ]
 $$
+<br/>
+
 $E1: x1 + 2x2 + x3 = 1$
 
 $E2: x1 + 2x2 + 3x3 = 3$
