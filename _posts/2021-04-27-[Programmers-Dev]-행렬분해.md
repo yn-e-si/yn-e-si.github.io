@@ -602,7 +602,7 @@ $$
   - QR decomposition
   - SVD
 
-- LU, QR decomposition 은 <code>$n \times n$ 정방행렬 (square matrix)</code> 에 대한 행렬분해이고 
+- LU, QR decomposition 은 <code> $n \times n$ 정방행렬 (square matrix) </code> 에 대한 행렬분해이고 
 
   SVD 는 <code>$m \times n$ 행렬</code> 에 대한 행렬분해이다.
 
