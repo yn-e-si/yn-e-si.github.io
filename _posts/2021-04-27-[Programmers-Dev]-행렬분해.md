@@ -26,10 +26,16 @@ use_math: true
 $$
 AX = b
 $$
+<br/>
+
 LU 분해를 이용하면 위와 같았던 식이,
+
+<br/>
 $$
 AX = b \rightarrow (LU)X = b \rightarrow L(UX) = b \rightarrow Ly=b,(단, UX = y)
 $$
+<br/>
+
 와 같은 식으로 바뀌게 된다.
 
 &#128073; 즉, 문제 자체가 $y$ 를 먼저 구하는 것으로 바뀌게 되는데 이는 <span style="background-color:#fffacd">**원래의 문제를 작은 두 개의 문제로 바꾸어 푸는 방식**</span>으로 변형시키게 되는 것이다. 작은 두 개의 문제는 아래와 같다.
@@ -52,17 +58,17 @@ LU 분해는 가우스 소거법의 `forward elimination` 을 행렬로 코드�
 - U : 행렬 A 를 전방소거한 후 남은 upper triangular matrix  이다.
 - P : 행렬 A 를 전방소거하는데 쓰인 interchange 에 대한 EROs 를 기록해 둔 행렬이다.
 
-&#128073; 즉,<code>$A = PLU$</code>형태로 리턴을 하게 된다.
+&#128073; 즉,<code>A = PLU​</code>형태로 리턴을 하게 된다.
 
 <br/>
 
 #### LU decomposition 활용
 
-- 수치적 안정성: 선형시스템 <code>$AX = b$</code> 의 해를 역행렬 <code>$A^{-1}$</code> 를 이용해 직접 구하는 것 보다 
+- 수치적 안정성: 선형시스템 <code>AX = b​</code> 의 해를 역행렬 $A^{-1}$​ 를 이용해 직접 구하는 것 보다 
 
-  <code>$PLU$</code> 분해를 이용하는 것이 더 수치적으로 안정적이다.
+  <code>PLU</code> 분해를 이용하는 것이 더 수치적으로 안정적이다.
 
-- $b$ 가 자주 업데이트되는 경우: 선형시스템 <code>$AX = b$ </code>에서 행렬 $A$ 는 고정되어 있고 $b$ 가 자주 변하는 문제가 종종 있다. 이런 경우, 행렬 $A$ 를 미리 <code>$PLU$</code>로 분해해 둔다면, $b$ 가 업데이트될 때마다 선형시스템의 해<code>$X$</code> 를 실시간으로 구할 수 있다.
+- $b$ 가 자주 업데이트되는 경우: 선형시스템 <code>AX = b​</code> 에서 행렬 $A$ 는 고정되어 있고 $b$ 가 자주 변하는 문제가 종종 있다. 이런 경우, 행렬 $A$ 를 미리 <code>PLU​</code> 로 분해해 둔다면, $b$ 가 업데이트될 때마다 선형시스템의 해 <code>X​</code> 를 실시간으로 구할 수 있다.
 
 <br/>
 
@@ -78,7 +84,9 @@ QR 분해를 설명하기 전에 필요한 몇 가지 개념에 대해 먼저 �
 
 #### 투영 (projection)
 
-두 벡터 $u, a$ 가 있을 때, <span style="background-color:#fffacd">**벡터 $u$ 를 $a$ 위에 투영한 벡터**</span>를 <code>$proj_au$</code> 라 하고 다음과 같이 구한다.
+두 벡터 $u, a$ 가 있을 때, <span style="background-color:#fffacd">**벡터 $u$ 를 $a$ 위에 투영한 벡터**</span>를 $proj_au$ 라 하고 다음과 같이 구한다.
+
+<br/>
 $$
 proj_au = (\frac{u\cdot a}{\Vert a \Vert})(\frac{1}{\Vert a \Vert}\mathbf{a}) = (\frac{u \cdot a}{\Vert a\Vert^2})\mathbf{a}
 $$
@@ -89,13 +97,15 @@ $$
 
 > &#128173; 기저 a 에 대한 좌표값 = scaling 과 같은 개념이다.
 
-- 벡터 $u$ 를 $a$ 위에 투영하고 남은 보완 벡터 (complement vector) 는 <code>$u - proj_au$</code> 이다.
+- 벡터 $u$ 를 $a$ 위에 투영하고 남은 보완 벡터 (complement vector) 는 $u - proj_au$ 이다.
 
 - projection 과 complement vector 는 서로 <span style="background-color:#fffacd">**직교**</span>하는 성질을 가지고 있다.
 
 <br/>
 
 두 벡터 $u,a$ 가 있을 때, 투영과 보완의 개념을 이용해 <span style="background-color:#fffacd">**직교분할**</span>할 수 있다.
+
+<br/>
 $$
 proj_au \:\bot \: (u -proj_au)
 $$
@@ -165,7 +175,7 @@ $$
 
 #### 직교행렬 (Orthogonal Matrix) 을 이용한 선형시스템
 
-선형시스템 <code>$AX=b$</code> 에서 행렬 A 가 직교행렬이면, 해 $X$ 는 역행렬 $A^{-1}$ 의 계산없이 
+선형시스템 $AX=b$ 에서 행렬 A 가 직교행렬이면, 해 $X$ 는 역행렬 $A^{-1}$ 의 계산없이 
 
 다음과 같이 구할 수 있다.
 
@@ -256,16 +266,24 @@ $$
 #### 주어진 행렬 A 가 QR 분해되어 있을 경우 장점
 
 QR 분해를 이용해 $A\mathbf{x} =b $ 문제를 아래와 같이 나타내면
+
+<br/>
 $$
 A\mathbf{x} = b \Rightarrow (QR)\mathbf{x} = b \Rightarrow Q(R\mathbf{x}) = b \Rightarrow Q \mathbf{y} = b, (단, R \mathbf{x} = \mathbf{y)}
 $$
+<br/>
+
 선형시스템을 다음과 같이 두 단계로 간단히 해결할 수 있게 된다.
 
 <br/>
 
 1) Inner product (내적): $y$ 구하기
 
+<br/>
+
 ​                                                                    $Q$                   $y$       $=$    $b$ 
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -288,7 +306,11 @@ $$
 
 2) Back-substitution (후방대치법): $\mathbf{x}$ 구하기
 
+<br/>
+
 ​                                                                   $R$                   $\mathbf{x}$      $=$      $y$       
+
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -358,13 +380,15 @@ $$
 
 #### 특이값 분해 (SVD, Singular Value Decomposition)
 
-LU 분해와 QR 분해는 <code>$n \times n$ 정방행렬 (square matrix)</code> 에 대한 행렬분해인 반면,
+LU 분해와 QR 분해는 <code>n x n​ 정방행렬 (square matrix)</code> 에 대한 행렬분해인 반면,
 
-특이값 분해는 일반적인 <code>$m \times n$ 행렬</code>에 관한 행렬 분해이다.
+특이값 분해는 일반적인 <code>m x n​ 행렬</code>에 관한 행렬 분해이다.
 
 특히 특이값 분해는 직교분할, 확대축소, 차원변환 등과 관련이 있다.
 
 &#128073; 특이값 분해는 주어진 행렬을 아래의 형태를 가지는 세 행렬의 곱으로 나누는 행렬분해이다.
+
+<br/>
 $$
 A_{m \times n} = U_{m \times m} \quad D_{m\times n} \quad V^T_{n \times n}
 $$
@@ -400,17 +424,17 @@ $$
 
 행렬 U, D, T 는 그 특성에 따라 다음과 같은 의미가 있다.
 
-- U : <code>$m$</code> 차원 회전행렬 (정규직교행렬)
+- U : <code>m​</code> 차원 회전행렬 (정규직교행렬)
 
 > &#128173; 각각의 column vector 들이 서로 직교하고 길이가 1인 정규직교행렬의 형태를 띈다.
 >
 > ​	  또한 회전행렬의 의미를 띄고 있다.
 
-- D : <code>$n$</code> 차원 확대축소 (확대축소 크기에 따른 정렬 형태) 한 후, <code>$n \rightarrow m$</code> 으로 차원변환
+- D : <code>n</code> 차원 확대축소 (확대축소 크기에 따른 정렬 형태) 한 후, <code>n >> m​</code> 으로 차원변환
 
 > &#128173; 축 방향으로 값을 확대하거나 축소하는 의미를 가지고 있다.
 
-- V : <code>$n$</code> 차원 회전행렬 (정규직교행렬)
+- V : <code>n​</code> 차원 회전행렬 (정규직교행렬)
 
 > &#128173; $n \times n$ 정방행렬인 V 의 row vector 들은 축 방향을 가지게 되는 행렬이 나오게 되어 일종의 
 >
@@ -423,6 +447,8 @@ $$
 <br/>
 
 예시)
+
+<br/>
 $$
 A_{3 \times 2} = U_{3 \times 3} \quad D_{3\times 2} \quad V^T_{2 \times 2}
 $$
@@ -474,6 +500,8 @@ $$
 
 
 예) 증폭값이 가장 큰 경우만 취할 경우
+
+<br/>
 $$
 A_{3 \times 2} = U'_{3 \times 1} \quad D'_{1\times 1} \quad V'^T_{1 \times 2} = A'_{3 \times 2}
 $$
@@ -510,10 +538,12 @@ $$
 <br/>
 
 > &#128173; 응집성이 높다라는 것은 해당 방향으로 길이가 길게 늘어뜨러져 있는 것을 의미한다. 
-
-> &#128173; 응집성이 높은 경우만을 계산하면 근사치로 계산이 되는데 이 값은 원래의 값과 같은 차원을    
 >
-> ​      가진다. 다만, 응집성이 높은 정보만이 살아 있고 상대적으로 응집성이 낮은 경우는 정보가 손  
+> &#128173; 응집성이 높은 경우만을 계산하면 근사치로 계산이 되는데 이 값은 원래의 값과 같
+>
+> ​       은 차원을 가진다.
+>
+> &#128173; 다만, 응집성이 높은 정보만이 살아 있고 상대적으로 응집성이 낮은 경우는 정보가 손  
 >
 > ​      실되는 결과를 가져온다. 이는 일종의 정보축약을 시키는 것이라 볼 수 있다.
 
@@ -533,18 +563,21 @@ $$
 
 직교분해이다.
 
-$K$ 개의 $n$ 차원 데이터 $\{\mathbf{x}_i\}^K_{i=1}$ 가 있을 때, 데이터의 중심 $m$ 과 공분산행렬 $C$ 는 다음과 같이 구할 수 있다.
+$K$ 개의 $n$ 차원 데이터 $\{\mathbf{x}_i\}^K_{i=1}$ 가 있을 때, 데이터의 중심 $m$ 과 공분산행렬 $C$ 는 다음과 같이 구할 수 있다.<br/>
 $$
 m = \frac{1}{K} \sum_{i=1}^{K}\mathbf{x}_i, C =\frac{1}{K} \sum_{i=1}^{K}(\mathbf{x}_i - m) (\mathbf{x}_i - m)^T
 $$
+<br/>
 
-1. 우선 데이터의 중심 ($m$) 을 먼저 구한다.
+1. 우선 데이터의 중심 $m$ 을 먼저 구한다.
 2. 각 데이터와 $m$ 간의 외적을 구한다.
 3. 해당 값들의 평균이 공분산행렬 $C$ 가 된다.
 
 <br/>
 
 공분산행렬 $C$ 에 대해 주성분분석(PCA) 은 아래와 같다.
+
+<br/>
 $$
 C_{n \times n} = W_{n \times n} \quad D_{n\times n} \quad W^T_{n \times n} 
 $$
@@ -602,8 +635,8 @@ $$
   - QR decomposition
   - SVD
 
-- LU, QR decomposition 은 <code> $n \times n$ 정방행렬 (square matrix) </code> 에 대한 행렬분해이고 
+- LU, QR decomposition 은 <code>n x n 정방행렬 (square matrix)</code> 에 대한 행렬분해이고 
 
-  SVD 는 <code>$m \times n$ 행렬</code> 에 대한 행렬분해이다.
+  SVD 는 <code>m x n​ 행렬</code> 에 대한 행렬분해이다.
 
 - SVD 와 PCA 는 데이터 응집성이 큰 방향에 영향이 크다.
