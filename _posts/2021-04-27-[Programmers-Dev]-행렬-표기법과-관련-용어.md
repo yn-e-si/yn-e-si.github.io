@@ -44,8 +44,7 @@ $$
 $$
 \left[
 \begin{matrix}
-    2 & 1 & 0 & -3 \\
-
+    2 & 1 & 0 & -3 
 \end{matrix}
 \right]
 \quad \quad \quad\left[
@@ -76,7 +75,6 @@ A = \left[
     a_{21} & a_{22} & a_{23} & ... &a_{2n} \\
       &&...  \\
       a_{m1} & a_{m2} & a_{m3} & ...& a_{mn}
- 
 \end{matrix}
 \right]
 $$
@@ -111,8 +109,7 @@ A = \left[
 \right] \quad \quad \quad A^T = \left[
 \begin{matrix}
     1 & 3  & 5\\
-    2 & 4 & 6 \\
-    
+    2 & 4 & 6 \\   
 \end{matrix}
 \right]
 $$
@@ -129,8 +126,7 @@ $$
     \mathbf{x_1}  \\
     \mathbf{x_2}  \\
     ..\\
-    \mathbf{x_n}
-    
+    \mathbf{x_n}   
 \end{matrix}
 \right]
 $$
@@ -175,7 +171,6 @@ A = \left[
     a_{21} & a_{22} & a_{23} & ...& a_{2n} \\
       &&...  \\
       a_{n1} & a_{n2} & a_{n3} & ... &a_{nn}
- 
 \end{matrix}
 \right]
 $$
@@ -197,7 +192,6 @@ A = \left[
     0 & 1 & 0 & ... &0 \\
       &&...  \\
       0 & 0 & 0 & ...& 1
- 
 \end{matrix}
 \right]
 $$
@@ -304,8 +298,7 @@ $$
     1  \\
     2  \\
     3\\
-    4
-    
+    4 
 \end{matrix}
 \right]
 $$
@@ -320,26 +313,21 @@ $$
     1  \\
     2  \\
     3\\
-    4
-    
+    4 
 \end{matrix}
 \right]_{4 \times 1}\quad \quad \left[
 \begin{matrix}
     1 & 2  \\
-    3 & 4  \\
-    
+    3 & 4  \\ 
 \end{matrix}
 \right]_{2 \times 2} \quad \quad \left[
 \begin{matrix}
     1 & 3  \\
     2 & 4 \\
-
-    
 \end{matrix}
 \right]_{2 \times 2} \quad \quad \left[
 \begin{matrix}
     1 &2&3&4
-    
 \end{matrix}
 \right]_{1 \times 4}
 $$
@@ -359,7 +347,6 @@ $$
 \begin{matrix}
     1 & 2 &3 \\
     4 & 5& 6
-    
 \end{matrix}
 \right]_{2 \times 3}
 $$
@@ -372,12 +359,10 @@ $$
 \left[
 \begin{matrix}
     1 \\ 2 \\3\\4\\5\\6
-    
 \end{matrix}
 \right]_{6 \times 1} \quad \quad\left[
 \begin{matrix}
     1 \\ 4 \\2\\5\\3\\6
-    
 \end{matrix}
 \right]_{6 \times 1}
 $$
@@ -405,7 +390,6 @@ T = \left[
     P_{(2,1)} & P_{(2,2)} & P_{(2,3)} & \cdots& P_{(2,j)} \\
       &&\ddots  \\
       P_{(i,1)} & P_{(i,2)} & P_{(i,3)} & \cdots &P_{(i,j)}
- 
 \end{matrix}
 \right]
 $$
@@ -434,7 +418,6 @@ A = \left[
 \begin{array}{}
     A_{11} & A_{12} \\
    A_{21} & A_{22}\\   
-
 \end{array}
 \right]
 $$
@@ -463,9 +446,7 @@ $$
 = \left[
 \begin{array}{c|c}
     a_{11} & a_{12} & a_{13} \\
-    
    a_{21} & a_{22} & a_{23}\\  
-   
    a_{31} & a_{32} & a_{33}  \\
 \end{array}
 \right] =\left[
@@ -504,12 +485,10 @@ $$
 AB = \left[
 \begin{matrix}
     a_1 \\ a_2 \\\vdots\\a_m
-    
 \end{matrix}
 \right]B = \left[
 \begin{matrix}
     a_1B \\ a_2B \\\vdots\\a_mB
-    
 \end{matrix}
 \right] = C
 $$
@@ -541,7 +520,6 @@ A = \left[
     a_{21} & a_{22} & a_{23} & \cdots& a_{2n} \\
       && \ddots  \\
       a_{m1} & a_{m2} & a_{m3} & \cdots &a_{mn}
- 
 \end{matrix}
 \right] = [a_1 a_2\cdots a_n ]
 $$
@@ -565,17 +543,14 @@ A = \left[
     a_{21} & a_{22} & \cdots& a_{2n} \\
       && \ddots  \\
       a_{m1} & a_{m2}  & \cdots &a_{mn}
- 
 \end{matrix}
 \right]\left[
 \begin{matrix}
     \mathbf{x}_1 \\ \mathbf{x}_2 \\\vdots\\\mathbf{x}_n
-    
 \end{matrix}
 \right] = [a_1 a_2\cdots a_n ]\left[
 \begin{matrix}
     \mathbf{x}_1 \\ \mathbf{x}_2 \\\vdots\\\mathbf{x}_n
-    
 \end{matrix}
 \right] = \mathbf{x}_1a_1 +\mathbf{x}_2a_2 + \cdots \mathbf{x}_na_n
 $$
