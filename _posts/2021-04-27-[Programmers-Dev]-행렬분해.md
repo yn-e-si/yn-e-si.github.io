@@ -28,12 +28,16 @@ AX = b
 $$
 <br/>
 
+<br/>
+
 LU 분해를 이용하면 위와 같았던 식이,
 
 <br/>
 $$
 AX = b \rightarrow (LU)X = b \rightarrow L(UX) = b \rightarrow Ly=b,(단, UX = y)
 $$
+<br/>
+
 <br/>
 
 와 같은 식으로 바뀌게 된다.
@@ -233,7 +237,7 @@ $$
 
 <br/>
 $$
-A \quad \quad \quad=  \quad \quad    Q \quad \quad \quad \quad R
+\quad \quad \quad A \quad \quad \quad=  \quad \quad    Q \quad \quad \quad \quad R
 $$
 <br/>
 $$
