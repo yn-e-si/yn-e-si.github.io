@@ -88,7 +88,7 @@ $$
 
 <br/>
 
-### &#128204; Transpose Matrix (전치행렬)
+### Transpose Matrix (전치행렬)
 
 - $m \times n$ 행렬 A 에 대한 transpose matrix  $A^T$ 는 $A$ 의 행을 열로, $A$ 의 열을 행으로 가지는 
 
@@ -115,7 +115,7 @@ A = \left[
 $$
 <br/>
 
-### &#128204; 벡터 표기법
+### 벡터 표기법
 
 - 벡터는 아래의 $\mathbf{x}$ 와 같이 볼드체 소문자로 표기한다.
 
@@ -139,7 +139,7 @@ $$
 
 <br/>
 
-### &#128204; Zero Matrices (영행렬)
+### Zero Matrices (영행렬)
 
 - 행렬의 모든 요소가 0 이면, 해당 행렬을 영행렬 (zero matrix) 라 하고 $O$ 으로 표기한다.
 
@@ -159,7 +159,7 @@ $$
 
 <br/>
 
-### &#128204; $n \times n$ 행렬: Square Matrix (정방행렬)
+### $n \times n$ 행렬: Square Matrix (정방행렬)
 
 - 행과 열의 개수가 모두 $n$ 인 정사각형 모양의 행렬을 $n$ 차 square matrix 라 한다.
 
@@ -180,7 +180,7 @@ $$
 
 <br/>
 
-### &#128204; Identity Matrices (항등행렬)
+### Identity Matrices (항등행렬)
 
 - 주대각선이 1 이고 나머지 요소는 모두 0 인 $n$ 차 정방행렬을 identity matrix 라 한다.
 
@@ -201,7 +201,7 @@ $$
 
 <br/>
 
-### &#128204; 행렬의 곱
+### 행렬의 곱
 
 - $m \times r $ 행렬 $A = [a_{ij}]$  와 $r \times n $ 행렬 $B = [b_{ij}] $ 가 있을 때, 두 행렬의 곱 $AB $ 는
 
@@ -232,6 +232,8 @@ $$
 \end{matrix}
 \right]_{m \times n}
 $$
+<br/>
+
 <br/>
 $$
 AB = C
@@ -422,6 +424,8 @@ A = \left[
 \right]
 $$
 <br/>
+
+<br/>
 $$
 = \left[
 \begin{array}{}
@@ -465,6 +469,10 @@ $$
 #### 분할행렬로 행렬의 곱 이해하기
 
 - 두 행렬의 곱 $AB=C$ 를 아래와 같이 두 가지 관점으로 볼 수 있다.
+
+<br/>
+
+<br/>
 
 1) column vector - matrix product
 
