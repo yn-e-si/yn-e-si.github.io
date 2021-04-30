@@ -124,9 +124,20 @@ statistics.median(a)
 - 편차의 제곱의 합을 자료의 수로 나눈 값이다.
     - 편차: 값과 평균의 차이
 - 자료가 모집단일 경우: 모분산
-$$\sigma^2 = \frac{1}{N} \sum^N_{i=1} (x_i - m)^2$$
+
+<br/>
+
+- $$\sigma^2 = \frac{1}{N} \sum^N_{i=1} (x_i - m)^2$$
+
+<br/>
+
 - 자료가 표본일 경우: 표본분산
-$$s^2 = \frac{1}{n-1} \sum^N_{i=1} (x_i - \bar{x})^2$$
+
+<br/>
+
+- $$s^2 = \frac{1}{n-1} \sum^N_{i=1} (x_i - \bar{x})^2$$
+
+<br/>
 
 &#128073; 분산의 값을 보면 자료들이 평균에 비해 얼마나 퍼져 있는지 알 수 있다.
 
@@ -164,10 +175,24 @@ numpy.var(a, ddof=1)
 **표준편차 (Standard Deviation)**
 
 - 분산의 양의 제곱근
+
 - 모표준편차 (population standard deviation)
-$$\sigma = \sqrt{\frac{1}{N} \sum^N_{i=1} (x_i - m)^2}$$
+
+  <br/>
+
+  $$\sigma = \sqrt{\frac{1}{N} \sum^N_{i=1} (x_i - m)^2}$$
+
+<br/>
+
 - 표본표준편차 (sample standard deviation)
-$$s =\sqrt{ \frac{1}{n-1} \sum^N_{i=1} (x_i - \bar{x})^2}$$
+
+  
+
+  <br/>
+
+  
+
+  $$s =\sqrt{ \frac{1}{n-1} \sum^N_{i=1} (x_i - \bar{x})^2}$$
 
 <br/>
 
@@ -175,7 +200,6 @@ $$s =\sqrt{ \frac{1}{n-1} \sum^N_{i=1} (x_i - \bar{x})^2}$$
 
 ```python
 # 모표준편차
-
 방법 1.
 statistics.pstidev(a)
 
@@ -183,7 +207,6 @@ statistics.pstidev(a)
 numpy.std(a)
 
 # 표본표준편차
-
 방법 1.
 statistics.stdev(a)
 
@@ -229,7 +252,7 @@ max(a) - min(a)
 
 **python code**
 
-```pyrhon
+```python
 # 제 1 사분위수
 numpy.quantile(a, .25)
 
@@ -388,7 +411,7 @@ $$
 
 - 어떤 사건 $A$ 가 일어났을 때, 다른 사건 $B$ 가 일어날 확률
 
-  $P(B|A) = \frac{P(A \cap B)}{P(A)}$
+  $P(B \mid A) = \frac{P(A \cap B)}{P(A)}$
 
 - 단, $P(A)>0$
 
@@ -403,7 +426,7 @@ $$
 <br/>
 
 - $P(A \cap B) = \frac{2}{6} = \frac{1}{3}$
-  - $P(B|A) = \frac {P(A \cap B)}{P(A)} = \frac {1/3}{1/2} = \frac {2}{3}$
+  - $P(B \mid A) = \frac {P(A \cap B)}{P(A)} = \frac {1/3}{1/2} = \frac {2}{3}$
 
 <br/>
 
@@ -521,7 +544,7 @@ $$
 
 앞의 예제에서 동물 한 마리를 랜덤하게 선택했는데, 이 도물이 2 살 이상이었다. 이 때, 이 동물이 사자일 확률은?
 
-- $P(A|B)= $ ?
+- $P(A \mid B)= $ ?
 - 위의 질문은 $P(A)$ 와는 다른 질문이다.
 
 $$
@@ -578,9 +601,9 @@ $$
   - $P(A) = \frac{3}{4}$
 - 사건 $B$
   - 넥타이를 맨 사건
-  - $P(B|A) = \frac {3}{4} , P(B|A^C) = \frac{1}{2}$
+  - $P(B \mid A) = \frac {3}{4} , P(B \mid A^C) = \frac{1}{2}$
 - 구하고자 하는 확률
-  - $P(A|B) = \frac {(3/4) \times (3/4) }{(3/4) \times (3/4) + (1/2) \times (1/4)} = \frac {9}{11}$
+  - $P(A \mid B) = \frac {(3/4) \times (3/4) }{(3/4) \times (3/4) + (1/2) \times (1/4)} = \frac {9}{11}$
 
 <br/>
 
