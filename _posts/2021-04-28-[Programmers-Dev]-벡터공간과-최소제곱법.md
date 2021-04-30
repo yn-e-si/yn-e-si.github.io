@@ -145,12 +145,16 @@ $$
 A\mathbf{x} = b
 $$
 <br/>
+
+<br/>
 $$
 \Rightarrow A^TA\bar{\mathbf{x}} = A^Tb
 $$
 <br/>
+
+<br/>
 $$
-\Rightarrow \bar{{\mathbf {x}}} = {(A^TA)^{-1}}A^Tb
+\Rightarrow \bar {{\mathbf {x}}} = {(A^T A)^{-1}}A^T b
 $$
 <br/>
 
@@ -194,6 +198,8 @@ $A \bar { \mathbf{x}} = proj_Wb$
 $$
 y = mx +b
 $$
+<br/>
+
 <br/>
 $$
 \left[
