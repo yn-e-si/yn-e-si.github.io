@@ -7,7 +7,7 @@ categories:
  - DL
 tags:
  - 프로그래머스
- - 인공지능
+ - 인공지능 수학
  - 선형대수
 use_math: true
 ---
@@ -137,7 +137,7 @@ $$
 
 <br/>
 $$
- \left[
+\left[
 \begin{matrix}
     1 & 4 \\
     -2 & 2 \\
@@ -147,7 +147,7 @@ $$
     2 & 2 & -4 \\
     2 & 1 & 7\\  6 & -1 & -1
 \end{matrix}
-\right] 
+\right]
 $$
 <br/>
 
@@ -256,7 +256,7 @@ $$
     * & * & * \\
     0 & * & *\\  0 & 0 & *
 \end{matrix}
-\right] 
+\right]
 $$
 <br/>
 

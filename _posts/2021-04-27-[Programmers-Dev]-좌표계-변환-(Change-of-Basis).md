@@ -7,7 +7,7 @@ categories:
  - DL
 tags:
  - 프로그래머스
- - 인공지능
+ - 인공지능 수학
  - 선형대수
 use_math: true
 ---
@@ -21,8 +21,6 @@ use_math: true
 <br/>
 
 $A\mathbf{x} = b$ 일 때, 
-
-<br/>
 
 - $A$는 <code>좌표계</code>를 의미한다.
 - $\mathbf{x}$ 는 <code>좌표계에서 좌표값</code>의 의미를 가진다.
@@ -54,6 +52,8 @@ $A\mathbf{x} = b$ : 기준이 $b$ 이다.
 
 - (좌항): 표준좌표계 에서 어떤 벡터의 좌표값은 $\mathbf{x}$ 이다.
 
+<br/>
+
 $A^{-1}b = \mathbf{x}$ : 기준이 $\mathbf{x}$ 이다.
 
 - (좌항): $A^{-1}$ 의 열벡터들을 기저 (basis) 로 가지는 좌표계에서는 동일 벡터의 좌표값은 $b$ 이다.
@@ -62,11 +62,7 @@ $A^{-1}b = \mathbf{x}$ : 기준이 $\mathbf{x}$ 이다.
 
 따라서,
 
-<br/>
-
 $A\mathbf{x} = b$ 
-
-<br/>
 
 - (우항): 표준좌표계에서 어떤 벡터의 좌표값은 $b$ 이다.
 - (좌항): $A$ 의 열벡터들을 기저(basis) 로 가지는 좌표계에서는 동일 벡터의 좌표값은 $\mathbf{x}$ 이다.
@@ -94,6 +90,8 @@ $$
 \right]
 $$
 <br/>
+
+<br/>
 $$
 v_1\left[
 \begin{matrix}
@@ -117,6 +115,8 @@ v_1\left[
 \end{matrix}
 \right]
 $$
+<br/>
+
 <br/>
 $$
 v = \left[

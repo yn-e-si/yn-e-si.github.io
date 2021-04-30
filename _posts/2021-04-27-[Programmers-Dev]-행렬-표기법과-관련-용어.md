@@ -7,7 +7,7 @@ categories:
  - DL
 tags:
  - 프로그래머스
- - 인공지능
+ - 인공지능 수학
  - 선형대수
 use_math: true
 ---
