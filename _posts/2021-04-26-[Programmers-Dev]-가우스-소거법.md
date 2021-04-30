@@ -32,8 +32,8 @@ $$
 \right
 ]  \left[
 \begin{matrix}
-x1 \\
-x2 \\
+x_1 \\
+x_2 \\
 \end{matrix}
 \right
 ] = \left[
@@ -42,7 +42,7 @@ x2 \\
 3 \\
 \end{matrix}
 \right
-] 
+]
 $$
 <br/>
 
@@ -59,8 +59,8 @@ $$
 ] 
 \left[
 \begin{matrix}
-x1 \\
-x2 \\
+x_1 \\
+x_2 \\
 \end{matrix}
 \right
 ] = \left[
@@ -88,8 +88,8 @@ $$
 \right
 ]\left[
 \begin{matrix}
-x1 \\
-x2 \\
+x_1 \\
+x_2 \\
 \end{matrix}
 \right
 ] = \left[
@@ -138,9 +138,9 @@ $$
 \right
 ]\left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3 \\
+x_1 \\
+x_2 \\
+x_3 \\
 \end{matrix}
 \right
 ] = \left[
@@ -167,9 +167,9 @@ $$
 \right
 ]\left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3 \\
+x_1 \\
+x_2 \\
+x_3 \\
 \end{matrix}
 \right
 ] = \left[
@@ -209,9 +209,9 @@ $$
 \right
 ] = \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -272,9 +272,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -316,9 +316,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -346,9 +346,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -380,9 +380,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -411,9 +411,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
@@ -446,9 +446,9 @@ $$
 \right
 ] \left[
 \begin{matrix}
-x1 \\
-x2 \\
-x3
+x_1 \\
+x_2 \\
+x_3
 \end{matrix}
 \right
 ] = \left[
