@@ -94,12 +94,13 @@ QR 분해를 설명하기 전에 필요한 몇 가지 개념에 대해 먼저 �
 $$
 proj_au = (\frac{u\cdot a}{\Vert a \Vert})(\frac{1}{\Vert a \Vert}\mathbf{a}) = (\frac{u \cdot a}{\Vert a\Vert^2})\mathbf{a}
 $$
+<br/>
 
-$$
-(길이)(방향 )=(기저 \, a에\, 대한\,\, 좌표값)\mathbf{a}
-$$
+(길이)(방향)=(기저 a에 대한 좌표값) $\mathbf{a}$
 
 > &#128173; 기저 a 에 대한 좌표값 = scaling 과 같은 개념이다.
+
+<br/>
 
 - 벡터 $u$ 를 $a$ 위에 투영하고 남은 보완 벡터 (complement vector) 는 $u - proj_au$ 이다.
 
@@ -113,10 +114,11 @@ $$
 $$
 proj_au \:\bot \: (u -proj_au)
 $$
-
+<br/>
 $$
 u = proj_au+(u- proj_au)
 $$
+<br/>
 
 - projection 된 벡터와 complement vector 는 서로 직교한다.
 - projection 벡터와 complement vector 를 서로 더하면 원래 벡터와 같다.
@@ -177,6 +179,8 @@ $$
 $$
 <br/>
 
+<br/>
+
 #### 직교행렬 (Orthogonal Matrix) 을 이용한 선형시스템
 
 선형시스템 $AX=b$ 에서 행렬 A 가 직교행렬이면, 해 $X$ 는 역행렬 $A^{-1}$ 의 계산없이 
@@ -188,6 +192,8 @@ $$
 > &#128173; 즉 벡터 b 를 행렬 A 의 각 열벡터 $a_j$ 에 투영한 연산 $proj_{a_j}b$ 로 부터 
 >
 > ​       $x_i = \frac { b \cdot a_j} {\Vert a_i \Vert}^2$  (각 축에 대한 스케일 값) 를 계산할 수 있다.
+
+<br/>
 
 - $X$ 의 $i$- 번째 요소와 $j$- 번째 요소의 계산은 <span style="background-color:#fffacd">**독립적**</span>이다.
 
@@ -215,9 +221,13 @@ $$
 >
 > ​      $x_i = b \cdot a_i$ 임을 계산할 수 있다.
 
+<br/>
+
 - $X$ 의 $i$- 번째 요소와 $j$- 번째 요소의 계산은 <span style="background-color:#fffacd">**독립적**</span>이다.
 
 > &#128173; 즉 $X$ 의 계산은 병렬처리가 가능하다.
+
+<br/>
 
 - 정규직교행렬은 <span style="background-color:#fffacd">**회전행렬**</span>이라고도 한다.
 
@@ -236,10 +246,10 @@ $$
 ​      행렬분해이다.
 
 <br/>
-$$
-\quad \quad \quad A \quad \quad \quad=  \quad \quad    Q \quad \quad \quad \quad R
-$$
-<br/>
+
+
+
+
 $$
 \left[
 \begin{matrix}
@@ -259,6 +269,12 @@ $$
 \right]
 $$
 <br/>
+$$
+\quad \quad \quad A \quad \quad \quad=  \quad \quad    Q \quad \quad \quad \quad R
+$$
+<br/>
+
+<br/>
 
 - Q : orthonormal matrix (정규직교행렬)
   - 각각의 열벡터들의 길이는 1 이다.
@@ -277,15 +293,11 @@ A\mathbf{x} = b \Rightarrow (QR)\mathbf{x} = b \Rightarrow Q(R\mathbf{x}) = b \R
 $$
 <br/>
 
+<br/>
+
 선형시스템을 다음과 같이 두 단계로 간단히 해결할 수 있게 된다.
 
-<br/>
-
 1) Inner product (내적): $y$ 구하기
-
-<br/>
-
-​                                                                    $Q$                   $y$       $=$    $b$ 
 
 <br/>
 $$
@@ -305,14 +317,18 @@ $$
 $$
 <br/>
 
-- Q 행렬에서의 각 column vector 들을 b 와 내적한 값이 y 에 값이다.
-- 순서를 지킬 필요가 없기에 병렬처리를 통해 y 를 한번에 구해낼 수 있다.
+​                                                                    $Q$                   $y$       $=$    $b$ 
 
-2) Back-substitution (후방대치법): $\mathbf{x}$ 구하기
+
 
 <br/>
 
-​                                                                   $R$                   $\mathbf{x}$      $=$      $y$       
+- Q 행렬에서의 각 column vector 들을 b 와 내적한 값이 y 에 값이다.
+- 순서를 지킬 필요가 없기에 병렬처리를 통해 y 를 한번에 구해낼 수 있다.
+
+<br/>
+
+2) Back-substitution (후방대치법): $\mathbf{x}$ 구하기
 
 <br/>
 $$
@@ -331,6 +347,10 @@ $$
     .. \\ .. \\ y_n
 \end{matrix}\right]
 $$
+<br/>
+
+​                                                                   $R$                   $\mathbf{x}$      $=$      $y$       
+
 <br/>
 
 - 최종 $\mathbf{x}$ 값 구하기
@@ -366,15 +386,13 @@ $$
 
 - <span style="background-color:#fffacd">**LU 분해**</span>의 경우, 선형시스템을 풀 때 <span style="background-color:#fffacd">**병렬처리 할 수 없다.**</span>
 
-> &#128173; LU 분해는 L 을 이용하는 경우도 순서대로 처리해야 하고, U 도 순서대로 처리를 해야하기 
->
-> ​      때문에 병렬처리가 불가하다.
+> &#128173; LU 분해는 L 을 이용하는 경우도 순서대로 처리해야 하고, U 도 순서대로 처리를 해야하기 때문에 병렬처리가 불가하다.
+
+<br/>
 
 - <span style="background-color:#fffacd">**QR 분해**</span>의 경우, Q 행렬이 꽉찬 구조를 가진 행렬이므로 <span style="background-color:#fffacd">**메모리 사용량이 많다.**</span>
 
 > &#128173; Q 가 orthnormal 하기에 꽉찬 구조를 가지게 된다.
-
-<br/>
 
 <br/>
 
@@ -393,10 +411,8 @@ LU 분해와 QR 분해는 <code>n x n​ 정방행렬 (square matrix)</code> 에
 &#128073; 특이값 분해는 주어진 행렬을 아래의 형태를 가지는 세 행렬의 곱으로 나누는 행렬분해이다.
 
 <br/>
-$$
-A_{m \times n} = U_{m \times m} \quad D_{m\times n} \quad V^T_{n \times n}
-$$
 
+<br/>
 $$
 \left[
 \begin{matrix}
@@ -421,12 +437,21 @@ $$
     *&*&*  \\
     *&*&* \\
     *&*&* 
-\end{matrix} \right] 
+\end{matrix} \right]
 $$
+<br/>
+$$
+A_{m \times n} = U_{m \times m} \quad D_{m\times n} \quad V^T_{n \times n}
+$$
+
+
+
 
 <br/>
 
 행렬 U, D, T 는 그 특성에 따라 다음과 같은 의미가 있다.
+
+<br/>
 
 - U : <code>m​</code> 차원 회전행렬 (정규직교행렬)
 
@@ -434,9 +459,13 @@ $$
 >
 > ​	  또한 회전행렬의 의미를 띄고 있다.
 
+<br/>
+
 - D : <code>n</code> 차원 확대축소 (확대축소 크기에 따른 정렬 형태) 한 후, <code>n >> m​</code> 으로 차원변환
 
 > &#128173; 축 방향으로 값을 확대하거나 축소하는 의미를 가지고 있다.
+
+<br/>
 
 - V : <code>n​</code> 차원 회전행렬 (정규직교행렬)
 
@@ -453,10 +482,6 @@ $$
 예시)
 
 <br/>
-$$
-A_{3 \times 2} = U_{3 \times 3} \quad D_{3\times 2} \quad V^T_{2 \times 2}
-$$
-
 $$
 \left[
 \begin{matrix}
@@ -480,7 +505,10 @@ $$
     -\frac{1}{\sqrt2}&\frac{1}{\sqrt2}  
 \end{matrix} \right]
 $$
-
+<br/>
+$$
+A_{3 \times 2} = U_{3 \times 3} \quad D_{3\times 2} \quad V^T_{2 \times 2}
+$$
 <br/>
 
 1. 2차원 입력에 대해 V 행렬을 통해 전체적인 입력을 회전시킨다.
@@ -506,10 +534,6 @@ $$
 예) 증폭값이 가장 큰 경우만 취할 경우
 
 <br/>
-$$
-A_{3 \times 2} = U'_{3 \times 1} \quad D'_{1\times 1} \quad V'^T_{1 \times 2} = A'_{3 \times 2}
-$$
-
 $$
 \left[
 \begin{matrix}
@@ -538,7 +562,10 @@ $$
     \\ 
 \end{matrix} \right]
 $$
-
+<br/>
+$$
+A_{3 \times 2} = U'_{3 \times 1} \quad D'_{1\times 1} \quad V'^T_{1 \times 2} = A'_{3 \times 2}
+$$
 <br/>
 
 > &#128173; 응집성이 높다라는 것은 해당 방향으로 길이가 길게 늘어뜨러져 있는 것을 의미한다. 
@@ -583,10 +610,6 @@ $$
 
 <br/>
 $$
-C_{n \times n} = W_{n \times n} \quad D_{n\times n} \quad W^T_{n \times n} 
-$$
-
-$$
 \left[
 \begin{matrix}
     *&*&*  \\
@@ -612,6 +635,11 @@ $$
     *&*&* 
 \end{matrix} \right] 
 $$
+<br/>
+$$
+C_{n \times n} = W_{n \times n} \quad D_{n\times n} \quad W^T_{n \times n}
+$$
+
 
 <br/>
 
