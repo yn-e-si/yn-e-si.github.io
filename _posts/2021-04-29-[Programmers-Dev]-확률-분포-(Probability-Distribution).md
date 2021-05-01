@@ -19,6 +19,8 @@ use_math: true
 - 랜덤한 실험 결과에 의존하는 실수이다.
   - 즉 표본 공간의 부분 집합에 대응하는 실수
 
+<br/>
+
 다음은 확률 변수라고 말할 수 있는 몇 가지의 예이다.
 
 - 주사위 2개를 던지는 실험
@@ -160,21 +162,21 @@ use_math: true
 $$
 \sigma^2 = \sum_x (x-\mu)^2P(X=x) = \sum_x(x^2 -2\mu x + \mu^2)P(X=x) 
 $$
-<br/>
+<br/><br/>
 $$
 =\sum_xx^2P(X=x) - \sum_x2\mu xP(X=x) + \sum_x\mu^2P(X=x) 
 $$
-<br/>
+<br/><br/>
 $$
 = E(X^2) - 2\mu \sum_xxP(X=x) + \mu^2\sum_xP(X=x) 
 $$
-<br/>
+<br/><br/>
 $$
 = E(X^2) - 2\mu^2 +\mu^2 = E(X^2) - \mu^2 = E(X^2) - \{E(X)\}^2
 $$
 <br/>
 
-
+<br/>
 
 **이산확률변수의 표준편차**
 
@@ -200,19 +202,19 @@ $$
 $$
 Cov(X,Y) = E[(X-\mu_X)(Y-\mu_Y)] = E[XY-\mu_XY-\mu_YX +\mu_X\mu_Y]
 $$
-<br/>
+<br/><br/>
 $$
 =E[XY]+E[-\mu_XY]+E[-\mu_YX]+E[\mu_X\mu_Y]
 $$
-<br/>
+<br/><br/>
 $$
 =E[XY]-\mu_X E[Y] - \mu_YE[X] + \mu_X\mu_Y 
 $$
-<br/>
+<br/><br/>
 $$
 = E[XY]-\mu_X\mu_Y -\mu_Y\mu_X+ \mu_X\mu_Y= E[XY] - E[X]E[Y]
 $$
-<br/>
+<br/><br/>
 
 #### 상관계수 (Correlation Coefficient)
 
@@ -220,13 +222,15 @@ $$
 
 > &#128173; 이는 확률변수의 단위에 영향을 받는 다는 것이다.
 
-<br/>
-
 - 따라서 단위에 의한 영향을 없앨 필요가 있고 상관계수는 두 확률변수의 단위에 영향없는 상관관계의 수치를 알려준다.
 
 - $\rho = Corr(X,Y) = \frac{Cov(X,Y)}{\sigma_X\sigma_Y}$
 
 
+
+<br/>
+
+<br/>
 
 <br/>
 
