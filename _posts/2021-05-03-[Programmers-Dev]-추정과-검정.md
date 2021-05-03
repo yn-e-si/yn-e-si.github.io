@@ -342,7 +342,7 @@ print(ci)
 - $\bar x = 10.43$
 - $ s = 1.11$
 - $Z = \frac {\bar X - \mu}{s / \sqrt n } = \frac{10.43 - 10.5}{1.11 / \sqrt {30}} = -0.351$
-- $z _{\frac {\alpha}{2}} = z_{0.025} = 1.96 > \vert -0.351 \vert = \vert Z \vert$
+- $z_{ \frac {\alpha} {2} } = z_{0.025} = 1.96 > \vert -0.351 \vert = \vert Z \vert$
 - 따라서 귀무가설을 기각할 수 없다.
 
 ```python
