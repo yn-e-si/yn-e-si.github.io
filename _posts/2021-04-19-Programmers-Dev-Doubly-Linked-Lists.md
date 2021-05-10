@@ -11,14 +11,14 @@ tags:
  - 알고리즘
 ---
 
-## 양방향 연결 리스트 (Doubly Linked Lists)
+## &#128161; 양방향 연결 리스트 (Doubly Linked Lists)
 
 - 한 쪽으로만 링크를 연결한 것이 아닌, 양쪽으로 연결한 자료구조
 - 앞으로도 (다음 node) 뒤로도 (이전 node) 진행이 가능하다.
 
 
 
-## 자료 구조 정의
+### &#128204; 자료 구조 정의
 
 ```python
 # node 의 구조 확장
@@ -48,7 +48,7 @@ class DoublyLinkedList:
 
 
 
-### 연산 정의
+#### 연산 정의
 
 1. 특정 원소 참조 (k 번째)
 2. 리스트 순회
@@ -58,7 +58,7 @@ class DoublyLinkedList:
 
 
 
-**특정 원소 참조 (k 번째)**
+##### 특정 원소 참조 (k 번째)
 
 ```python
 # 코드 개선 전 
@@ -104,7 +104,7 @@ def getAt(self, pos):
 
 
 
-**리스트 순회**
+##### 리스트 순회
 
 ```python
 def traverse(self):
@@ -122,7 +122,7 @@ def traverse(self):
 
 
 
-**리스트 역순회**
+##### 리스트 역순회
 
 ```python
 def reverse(self):
@@ -140,7 +140,7 @@ def reverse(self):
 
 
 
-**원소의 삽입**
+##### 원소의 삽입
 
 ```python
 def insertAfter(self, prev, newNode):
@@ -178,7 +178,7 @@ def insertAt(self, pos, newNode):
 
 
 
-**원소의 삭제**
+##### 원소의 삭제
 
 ```python
 def popAfter(self, prev):
@@ -218,7 +218,7 @@ def popAt(self, pos):
 
 
 
-**두 리스트의 연결**
+##### 두 리스트의 연결
 
 ```python
 def concat(self, L):
@@ -231,7 +231,7 @@ def concat(self, L):
 
 
 
-## Check Point
+## &#128161; Check Point
 
 - 기존의 linked list 보다 개선된 형태이다.
 - linked list 양 쪽 끝에 **dummy node** 를 만듬으로써 **양쪽**으로 진행 가능한 형태이다.
