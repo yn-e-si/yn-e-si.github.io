@@ -1,5 +1,5 @@
 ---
-title: "[Programmers Dev] 해시: 완주하지 못한 선수 "
+title: "[Programmers Dev] lv1_완주하지 못한 선수 "
 excerpt: "어서와! 자료구조와 알고리즘은 처음이지?"
 toc: true
 toc_sticky: true
@@ -13,9 +13,9 @@ tags:
 use_math: true
 ---
 
-## &#128161; 해시: 완주하지 못한 선수
+## &#128161; lv1_완주하지 못한 선수
 
-[[문제 출처]]()
+[[문제 출처]](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ### &#128204; 문제 설명
 
