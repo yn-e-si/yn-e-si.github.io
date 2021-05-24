@@ -11,10 +11,11 @@ tags:
  - 자료구조
  - 알고리즘
  - 리트코드
- - 문자열
+ - 배열
 
 ---
 ## &#128161; 561. 배열 파티션 I
+[[문제 출처]](https://leetcode.com/problems/array-partition-i/)
 ### &#128204; 문제 설명
 - <code>n</code> 개의 페어를 이용한 <code>min(a, b)</code> 의 합으로 만들 수 있는 가장 큰 수를 출력하라.
 

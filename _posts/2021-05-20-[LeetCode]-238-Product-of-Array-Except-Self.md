@@ -11,10 +11,11 @@ tags:
  - 자료구조
  - 알고리즘
  - 리트코드
- - 문자열
+ - 배열
 
 ---
 ## &#128161; 238. 자신을 제외한 배열의 곱
+[[문제 출처]](https://leetcode.com/problems/product-of-array-except-self/)
 
 ### &#128204; 문제 설명
 - 배열을 입력받아 <code>output[i]</code> 가 자신을 제외한 나머지 모든 요소의 곱셈 결과가 되도록 출력하라.

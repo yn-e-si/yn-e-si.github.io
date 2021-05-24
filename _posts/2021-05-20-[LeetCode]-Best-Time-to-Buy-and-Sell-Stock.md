@@ -11,10 +11,11 @@ tags:
  - 자료구조
  - 알고리즘
  - 리트코드
- - 문자열
+ - 배열
 
 ---
 ## &#128161; 121. 주식을 사고팔기 가장 좋은 시점
+[[문제 출처]](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 
 ### &#128204; 문제 설명
